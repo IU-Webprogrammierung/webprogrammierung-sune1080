@@ -1,12 +1,37 @@
-h1{
-    color: black;
-    font-size: 30px;
-}
-p{
-    color: black;
+nav {
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  img {
+    height: 36px;
+  }
+  .nav-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 300px;
+    align-items: center;
+  }
+
+  ul {
     font-size: 20px;
-    max-width: 100%;
+    gap: 80px;
+    display: flex;
+  }
 }
-.heroImage-container {
-    width: 100%;
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(188, 0, 0);
+}
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+img {
+  width: 100%;
 }
