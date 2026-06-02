@@ -3,6 +3,8 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   background-color: black;
   display: flex;
   padding: 20px;
