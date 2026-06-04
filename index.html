@@ -15,13 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   </head>
   <body>
-    <header>
-      <div
-        hx-get="components/header.html"
-        hx-trigger="load"
-        hx-swap="outerHTML"
-      ></div>
-    </header>
+    <header
+      hx-get="components/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></header>
 
     <section class="heroImage-container">
       <img
@@ -30,15 +28,86 @@
       />
     </section>
 
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        dignissimos similique ipsam sapiente accusamus quidem, dolorem qui animi
-        vitae. Ex quibusdam fugit dolore quas amet. Blanditiis quod aut dicta
-        repellendus?
-      </p>
-    </section>
+    <section class="mainContent-container">
+      <article class="description">
+        <h1>What is this game about?</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+          esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+          at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          Nam liber tempor cum soluta nobis eleifend option congue nihil
+          imperdiet doming id quod mazim placerat facer possim assum. Lorem
+          ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+          nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+          vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+          consequat, vel illum dolore eu feugiat nulla facilisis. At vero eos et
+          accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+          dolor sit amet, consetetur sadipscing elitr, sed diam
+        </p>
+      </article>
 
+      <section class="newsletter">
+        <h1>Newsletter</h1>
+        <p>
+          Get updates about development progress, new trailers, and release
+          announcements.
+        </p>
+        <form>
+          <input type="email" placeholder="Enter your email" required /> <br />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <img
+        src="images/screenshot_basementDoor.png"
+        alt="Image of a door leading to a dark basement"
+      />
+      <img
+        src="images/screenshot_forestAtNight.png"
+        alt="Image of a forest at night with police lights illuminating the trees."
+      />
+      <img
+        src="images/screenshot_houseAtNight.png"
+        alt="Image of a house at night with a bright red light shining through a window."
+      />
+      <img
+        src="images/screenshot_crimeScene.png"
+        alt="Image of a forest crime scene"
+      />
+      <img
+        src="images/screenshot_houseHallWay.png"
+        alt="Image of a house hallway at night."
+      />
+      <img
+        src="images/screenshot_forestMoonlight.png"
+        alt="Image of a forest at night with moonlight shining through the trees."
+      />
+    </section>
     <footer>
       <div
         hx-get="components/footer.html"
