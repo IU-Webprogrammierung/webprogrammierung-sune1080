@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article</title>
+    <title>Article | Game Title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,47 +14,67 @@
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   </head>
   <body>
-      <header
-        hx-get="components/header.html"
-        hx-trigger="load"
-        hx-swap="outerHTML"
-      ></header>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. A incidunt sit,
-      ab consectetur cupiditate magni, ratione earum quaerat minima aspernatur
-      voluptates. Quod adipisci at mollitia assumenda quibusdam inventore iste
-      eum corporis odit! Beatae sequi placeat voluptas aliquam ad incidunt
-      dolores id minima rerum distinctio aut, atque suscipit, magni vero. Ab,
-      dolorum quae porro ea quisquam error nam iure beatae nulla pariatur
-      eligendi dolor fugiat qui necessitatibus nesciunt possimus mollitia in
-      aliquam vero, at alias, tempore libero voluptatibus! Iusto veniam
-      repudiandae incidunt molestias soluta, nam totam assumenda neque laborum
-      libero, enim praesentium? Dignissimos, est odit reiciendis recusandae
-      veritatis repellat voluptatem? Dolor quos ad repellat animi debitis,
-      delectus laboriosam omnis odio ipsam repudiandae suscipit, ea, doloribus
-      maxime magnam adipisci corrupti minus ut! Laboriosam nesciunt rem nam
-      modi? Ad tenetur asperiores temporibus ipsum, doloremque quas, laboriosam
-      quo consequatur debitis sequi voluptatem dicta reiciendis laborum odit
-      deleniti dolores quidem nam. Porro, magni dicta dolore cumque maxime
-      veniam minima iste ipsam, repellat laudantium laborum sint error? Eaque
-      corrupti perspiciatis ullam excepturi perferendis itaque rerum deserunt
-      quasi, cum iure ipsa architecto nesciunt eligendi minus sunt adipisci
-      beatae? Deleniti velit, obcaecati vel quas beatae pariatur corrupti,
-      aliquam aperiam perspiciatis adipisci recusandae aspernatur quibusdam ex
-      sapiente porro praesentium quidem unde. Quae pariatur inventore animi
-      molestiae non aliquid aspernatur, voluptate mollitia incidunt rem
-      necessitatibus sunt dolor voluptates nobis unde voluptas. Consequatur,
-      porro voluptatem quo harum libero laborum tempora, nemo minima facilis qui
-      architecto! Perferendis eos, ipsam quod minima modi vel eveniet. Laborum
-      similique minima saepe minus accusantium commodi, explicabo nisi.
-      Voluptate earum quis repellendus debitis? Eum, amet ducimus. Laudantium
-      delectus iure quidem obcaecati corporis voluptates, ad vel odit corrupti
-      consectetur repellendus expedita quibusdam ullam rerum cupiditate numquam
-      deleniti, soluta labore quaerat fugit laborum, voluptas porro dignissimos.
-      Soluta a deserunt distinctio, illo doloremque et nostrum tempora,
-      explicabo placeat optio animi!
-    </p>
+    <header
+      hx-get="components/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></header>
+
+    <article class="articleContainer">
+      <div class="articleHeader">
+        <h1 class="articleTitle">Lorem ipsum dolor sit amet.</h1>
+        <p class="articleDate">12.05.2026</p>
+      </div>
+      <p class="articleContent">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A incidunt
+        sit, ab consectetur cupiditate magni, ratione earum quaerat minima
+        aspernatur voluptates. Quod adipisci at mollitia assumenda quibusdam
+        inventore iste eum corporis odit! Beatae sequi placeat voluptas aliquam
+        ad incidunt dolores id minima rerum distinctio aut, atque suscipit,
+        magni vero. Ab, dolorum quae porro ea quisquam error nam iure beatae
+        nulla pariatur eligendi dolor fugiat qui necessitatibus nesciunt
+        possimus mollitia in aliquam vero, at alias, tempore libero
+        voluptatibus! Iusto veniam repudiandae incidunt molestias soluta, nam
+        totam assumenda neque laborum libero, enim praesentium? Dignissimos, est
+        odit reiciendis recusandae veritatis repellat voluptatem? Dolor quos ad
+        repellat animi debitis, delectus laboriosam omnis odio ipsam repudiandae
+        suscipit, ea, doloribus maxime magnam adipisci corrupti minus ut!
+        Laboriosam nesciunt rem nam modi? Ad tenetur asperiores temporibus
+        ipsum, doloremque quas, laboriosam quo consequatur debitis sequi
+        voluptatem dicta reiciendis laborum odit deleniti dolores quidem nam.
+        Porro, magni dicta dolore cumque maxime veniam minima iste ipsam,
+        repellat laudantium laborum sint error? Eaque corrupti perspiciatis
+        ullam excepturi perferendis itaque rerum deserunt quasi, cum iure ipsa
+        architecto nesciunt eligendi minus sunt adipisci beatae? Deleniti velit,
+        obcaecati vel quas beatae pariatur corrupti, aliquam aperiam
+        perspiciatis adipisci recusandae aspernatur quibusdam ex sapiente porro
+        praesentium quidem unde. Quae pariatur inventore animi molestiae non
+        aliquid aspernatur, voluptate mollitia incidunt rem necessitatibus sunt
+        dolor voluptates nobis unde voluptas. Consequatur, porro voluptatem quo
+        harum libero laborum tempora, nemo minima facilis qui architecto!
+        Perferendis eos, ipsam quod minima modi vel eveniet. Laborum similique
+        minima saepe minus accusantium commodi, explicabo nisi. Voluptate earum
+        quis repellendus debitis? Eum, amet ducimus. Laudantium delectus iure
+        quidem obcaecati corporis voluptates, ad vel odit corrupti consectetur
+        repellendus expedita quibusdam ullam rerum cupiditate numquam deleniti,
+        soluta labore quaerat fugit laborum, voluptas porro dignissimos. Soluta
+        a deserunt distinctio, illo doloremque et nostrum tempora, explicabo
+        placeat optio animi!
+      </p>
+    </article>
+
+    <section class="newsletter">
+      <h1>Newsletter</h1>
+      <p>
+        Get updates about development progress, new trailers, and release
+        announcements.
+      </p>
+      <form>
+        <input type="email" placeholder="Enter your email" required /> <br />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
     <footer>
       <div
         hx-get="components/footer.html"

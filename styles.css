@@ -207,7 +207,7 @@ footer {
 }
 
 /* News Page */
-.articleGrid {
+.newsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -216,18 +216,18 @@ footer {
   margin: 40px auto;
   font-family: "Inter", sans-serif;
 }
-.articleCard {
+.newsCard {
   background-color: rgb(188, 0, 0);
   font-family: "Inter", sans-serif;
   overflow: hidden;
 }
 
-.articlePreview {
+.newsPreview {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.articleLink {
+.newsLink {
   display: block;
   text-decoration: none;
   font-size: 16px;
@@ -238,18 +238,17 @@ footer {
   margin-right: 20px;
   margin-left: 20px;
 }
-.articleLink:hover {
+.newsLink:hover {
   color: white;
 }
 
-.articleText {
+.newsText {
   font-size: 13px;
   color: black;
   margin-bottom: 12px;
-  
 }
 
-.articleDate {
+.newsDate {
   font-size: 16px;
   font-weight: bold;
   color: black;
@@ -259,7 +258,38 @@ footer {
   margin-left: 20px;
 }
 
-.articleImage {
+.newsImage {
   width: 100%;
   display: block;
+}
+
+/* Article Page */
+.articleContainer {
+  font-family: "Inter", sans-serif;
+  width: 60%;
+  margin: 40px auto;
+  padding: 0;
+
+  .articleHeader{
+    background-color: rgb(188, 0, 0);
+  }
+
+  .articleTitle {
+    padding: 8px 20px 0px 20px;
+    margin: 0; 
+  }
+  .articleDate {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-top: 1px solid black;
+    padding: 8px 20px 10px 20px;
+    margin: 0; 
+  }
+  .articleContent {
+    background-color: rgb(18, 18, 18);
+    color: white;
+    padding: 20px;
+    margin: 0; 
+  }
 }
