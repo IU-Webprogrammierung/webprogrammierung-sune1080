@@ -207,6 +207,43 @@ footer {
 }
 
 /* News Page */
+/* Newest Article */
+.newArticle {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(188, 0, 0);
+  width: 33%;
+  border-radius: 15px;
+  position: absolute;
+  top: 70%;
+  left: 8%;
+}
+
+.newArticleLink {
+  display: block;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.newArticleLink:hover {
+  color: white;
+}
+
+.newArticleDate {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border-top: 1px solid black;
+  padding-top: 8px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* News Grid */
 .newsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -216,6 +253,7 @@ footer {
   margin: 40px auto;
   font-family: "Inter", sans-serif;
 }
+
 .newsCard {
   background-color: rgb(188, 0, 0);
   font-family: "Inter", sans-serif;
@@ -270,13 +308,13 @@ footer {
   margin: 40px auto;
   padding: 0;
 
-  .articleHeader{
+  .articleHeader {
     background-color: rgb(188, 0, 0);
   }
 
   .articleTitle {
     padding: 8px 20px 0px 20px;
-    margin: 0; 
+    margin: 0;
   }
   .articleDate {
     font-size: 16px;
@@ -284,12 +322,12 @@ footer {
     color: black;
     border-top: 1px solid black;
     padding: 8px 20px 10px 20px;
-    margin: 0; 
+    margin: 0;
   }
   .articleContent {
     background-color: rgb(18, 18, 18);
     color: white;
     padding: 20px;
-    margin: 0; 
+    margin: 0;
   }
 }
