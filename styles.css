@@ -192,18 +192,33 @@ footer {
       width: 45px;
     }
   }
+}
+.platform-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
+  background-color: rgb(188, 0, 0);
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 80px;
+  text-align: center;
+}
+.platform-link:hover {
+  background-color: white;
+  color: rgb(188, 0, 0);
+}
 
-  .platform-link {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px;
-    background-color: rgb(188, 0, 0);
-    padding: 10px 20px;
-    border-radius: 20px;
-  }
+.heroPlatformLinks {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* News Page */
