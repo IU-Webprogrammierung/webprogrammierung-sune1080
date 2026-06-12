@@ -30,6 +30,20 @@ body {
   border-radius: 15px;
 }
 
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .pageLink {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
 /* Newsletter (only for HOME)*/
 .newsletterHome {
   position: absolute;
