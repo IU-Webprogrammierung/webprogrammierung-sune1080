@@ -15,24 +15,61 @@
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   </head>
   <body>
-      <header
-        hx-get="components/header.html"
-        hx-trigger="load"
-        hx-swap="outerHTML"
-      ></header>
-    <h1>About</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi fuga
-      nobis possimus, aliquam blanditiis dolorem dolorum repudiandae architecto
-      commodi!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia
-      voluptatem quas animi ipsum. Recusandae sapiente dolorum perferendis
-      ullam, tenetur quidem adipisci fuga debitis quisquam necessitatibus
-      aliquam, quia odit dicta quos sequi hic incidunt! Sunt possimus vel quidem
-      optio iusto?
-    </p>
+    <header
+      hx-get="components/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></header>
+    <div class="aboutContainer">
+      <h1 class="about">About...</h1>
+      <div class="aboutGameContainer">
+        <h2 class="aboutTitle">GAME TITLE</h2>
+        <p class="aboutText">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+          esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+          at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore.
+        </p>
+        <img src="images/screenshot_basementDoor.png" alt="" />
+      </div>
+      <div class="aboutGameContainer">
+        <h2 class="aboutTitle">ME</h2>
+        <p class="aboutText">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+          esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+          at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore.
+        </p>
+        <img src="images/screenshot_basementDoor.png" alt="" />
+      </div>
+    </div>
+
     <footer>
       <div
         hx-get="components/footer.html"
