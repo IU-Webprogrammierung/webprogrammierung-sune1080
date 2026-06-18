@@ -12,15 +12,14 @@ body {
 }
 .mainContent-container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
-@media (max-width: 1279px){
-  .mainContent-container{
-    grid-template-columns: 100% 100%;
+@media (max-width: 1279px) {
+  .mainContent-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-
 
 /* Description */
 .description {
@@ -35,16 +34,19 @@ body {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 15px;
+  min-width: 50%;
 }
-@media (max-width: 1279px){
-  .description{
+@media (max-width: 1279px) {
+  .description {
     font-size: 14px;
     top: 5%;
+    width: 50%;
   }
 }
-@media (max-width: 767px){
-  .description{
+@media (max-width: 767px) {
+  .description {
     font-size: 16px;
+    width: 80%;
   }
 }
 
@@ -62,60 +64,6 @@ body {
     text-decoration: none;
   }
 }
-
-/* Newsletter (only for HOME)*/
-.newsletterHome {
-  position: absolute;
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 15px;
-  padding: 20px;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%);
-  h1 {
-    font-size: 20px;
-  }
-  p {
-    margin-bottom: 20px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  form {
-    gap: 10px;
-    justify-content: center;
-
-    input {
-      width: 75%;
-      font-family: "Inter", sans-serif;
-      font-size: 13px;
-      padding: 10px;
-      border: none;
-      margin-bottom: 15px;
-    }
-  }
-  button {
-    border: none;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: rgb(188, 0, 0);
-    color: white;
-  }
-}
-/* Newsletter (not on top of images)*/
 .newsletter {
   font-family: "Inter", sans-serif;
   font-size: 13px;
@@ -196,7 +144,7 @@ nav {
     .nav-wrapper {
       gap: 10px;
     }
-    ul{
+    ul {
       gap: 50px;
       font-size: 22px;
     }
