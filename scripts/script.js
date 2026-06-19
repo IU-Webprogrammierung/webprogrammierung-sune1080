@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Aktiver Nav-Link
+  // Active Nav-Link
   document.addEventListener("htmx:afterSwap", function () {
     const links = document.querySelectorAll("nav a");
     links.forEach(function (link) {
@@ -46,4 +46,20 @@ document.addEventListener("DOMContentLoaded", function () {
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) lightbox.classList.remove("active");
   });
+});
+
+//Hamburger Menu
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("#hamburgerBtn");
+  if (!button) return;
+
+  const menu = document.getElementById("navMenu");
+  const isOpen = menu.classList.toggle("open");
+  button.setAttribute("aria-expanded", isOpen);
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.matches("#navMenu a")) {
+    document.getElementById("navMenu").classList.remove("open");
+  }
 });
