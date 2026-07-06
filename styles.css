@@ -131,6 +131,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  text-transform: uppercase;
   background-color: black;
   display: flex;
   padding: 20px;
@@ -254,6 +255,7 @@ footer {
   border-radius: 20px;
   width: 80px;
   text-align: center;
+  text-transform: uppercase;
 }
 .platform-link:hover {
   background-color: white;
@@ -561,6 +563,7 @@ footer {
 
 .aboutTitle {
   font-size: 20px;
+  text-transform: uppercase;
   background-color: rgb(188, 0, 0);
   color: white;
   text-align: center;
