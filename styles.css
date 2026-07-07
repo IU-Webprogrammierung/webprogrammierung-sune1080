@@ -98,8 +98,6 @@ body {
     margin-right: auto;
   }
   form {
-    gap: 10px;
-    justify-content: center;
     input {
       width: 75%;
       font-family: "Inter", sans-serif;
@@ -234,6 +232,10 @@ footer {
   font-family: "Inter", sans-serif;
   font-size: 13px;
   margin-top: auto;
+
+  p {
+    margin: 5px;
+  }
 
   .social-link {
     display: inline-block;
