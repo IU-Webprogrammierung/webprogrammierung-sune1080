@@ -9,14 +9,15 @@ body {
 .heroImage-container {
   display: flex;
   position: relative;
-  margin-top: -60px;
+  margin-top: -3.75rem;
 }
 .mainContent-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
-@media (max-width: 1279px) {
+@media (max-width: 79.9375em) {
+  /* 1279px */
   .mainContent-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -25,72 +26,76 @@ body {
 /* Description */
 .description {
   position: absolute;
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   text-align: center;
   color: white;
   top: 20%;
   left: 50%;
   transform: translate(-50%);
-  padding: 20px;
+  padding: 1.25rem;
   background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 15px;
+  border-radius: 0.9375rem; /* 15px */
   width: 40%;
 }
-@media (max-width: 1279px) {
+@media (max-width: 79.9375em) {
+  /* 1279px */
   .description {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     top: 5%;
     width: 50%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 47.9375em) {
+  /* 767px */
   .description {
     top: 5%;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     width: 80%;
   }
 }
 
 /* Pagination */
 .pagination {
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 
   .pageLink {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     text-decoration: none;
   }
-  @media (max-width: 1279px) {
+  @media (max-width: 79.9375em) {
+    /* 1279px */
     .pageLink {
-      font-size: 22px;
+      font-size: 1.375rem; /* 22px */
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 47.9375em) {
+    /* 767px */
     .pageLink {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 }
 
 .newsletter {
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 15px;
-  padding: 40px 20px;
+  border-radius: 0.9375rem; /* 15px */
+  padding: 2.5rem 1.25rem;
   width: fit-content;
-  margin: 20px auto;
+  margin: 1.25rem auto;
 
   h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 0;
   }
   p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -98,20 +103,20 @@ body {
   form {
     input {
       width: 75%;
-      font-size: 13px;
-      padding: 10px;
+      font-size: 0.8125rem; /* 13px */
+      padding: 0.625rem; /* 10px */
       border: none;
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem; /* 15px */
     }
   }
   button {
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color: white;
     color: black;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 15px;
+    padding: 0.5em 1em; /* relative to own font-size */
+    border-radius: 0.9375rem; /* 15px */
     cursor: pointer;
   }
   button:hover {
@@ -128,7 +133,7 @@ nav {
   text-transform: uppercase;
   background-color: black;
   display: flex;
-  padding: 20px;
+  padding: 1.25rem;
   align-items: center;
 
   a {
@@ -145,49 +150,51 @@ nav {
   }
 
   img {
-    height: 36px;
-    padding: 0px 20px;
+    height: 2.25rem;
+    padding: 0 1.25rem;
   }
   .hamburger {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem; /* 5px */
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.625rem; /* 10px */
 
     span {
       display: block;
-      width: 30px;
-      height: 3px;
+      width: 1.875rem; /* 30px */
+      height: 0.1875rem; /* 3px */
       background-color: white;
-      border-radius: 2px;
+      border-radius: 0.125rem; /* 2px */
     }
   }
   .nav-wrapper {
-    max-width: 1280px;
+    max-width: 80rem;
     margin: 0 auto;
     display: flex;
-    gap: 300px;
+    gap: 18.75rem;
     align-items: center;
   }
 
   ul {
-    font-size: 20px;
-    gap: 80px;
+    font-size: 1.25rem;
+    gap: 5rem;
     display: flex;
   }
-  @media (max-width: 1279px) {
+  @media (max-width: 79.9375em) {
+    /* 1279px */
     .nav-wrapper {
-      gap: 10px;
+      gap: 0.625rem; /* 10px */
     }
     ul {
-      gap: 50px;
-      font-size: 22px;
+      gap: 3.125rem; /* 50px */
+      font-size: 1.375rem; /* 22px */
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 47.9375em) {
+    /* 767px */
     .nav-wrapper {
       justify-content: space-between;
     }
@@ -204,7 +211,7 @@ nav {
       text-align: center;
 
       li {
-        padding: 15px 0;
+        padding: 0.9375rem 0; /* 15px 0 */
         border-top: 1px solid rgba(255, 255, 255, 0.15);
       }
     }
@@ -225,19 +232,19 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 13px;
+  padding: 1.25rem;
+  font-size: 0.8125rem; /* 13px */
   margin-top: auto;
 
   p {
-    margin: 5px;
+    margin: 0.3125rem; /* 5px */
   }
 
   .social-link {
     display: inline-block;
-    margin: 15px;
+    margin: 0.9375rem; /* 15px */
     img {
-      width: 45px;
+      width: 2.8125rem; /* 45px */
     }
   }
 }
@@ -245,13 +252,13 @@ footer {
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin: 15px;
+  margin: 0.9375rem; /* 15px */
   background-color: rgb(188, 0, 0);
-  padding: 10px 20px;
-  border-radius: 20px;
-  width: 80px;
+  padding: 0.5em 1em; /* relative to own font-size */
+  border-radius: 1.25rem;
+  width: 5rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -262,7 +269,7 @@ footer {
 
 .heroPlatformLinks {
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem; /* 15px */
   position: absolute;
   top: 70%;
   left: 50%;
@@ -273,7 +280,7 @@ footer {
 /* Newest Article */
 .newArticle {
   background-color: rgb(188, 0, 0);
-  border-radius: 15px;
+  border-radius: 0.9375rem; /* 15px */
   position: absolute;
   top: 70%;
   left: 8%;
@@ -281,29 +288,30 @@ footer {
   .newArticleLink {
     display: block;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
 
     &:hover {
       color: white;
     }
   }
   .newArticleDate {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
     border-top: 1px solid black;
-    padding-top: 8px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-top: 0.5rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
   }
 
-  @media (max-width: 1279px) {
+  @media (max-width: 79.9375em) {
+    /* 1279px */
     position: relative;
     left: 0%;
   }
@@ -313,17 +321,19 @@ footer {
 .newsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 20px;
-  max-width: 1280px;
+  gap: 2.5rem;
+  padding: 1.25rem;
+  max-width: 80rem;
   margin: auto;
 }
-@media (max-width: 1279px) {
+@media (max-width: 79.9375em) {
+  /* 1279px */
   .newsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 47.9375em) {
+  /* 767px */
   .newsGrid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -334,54 +344,60 @@ footer {
   overflow: hidden;
 
   .newsText {
-    font-size: 13px;
+    font-size: 0.8125rem; /* 13px */
     color: black;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
-    @media (max-width: 1279px) {
-      font-size: 14px;
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      font-size: 0.875rem; /* 14px */
     }
-    @media (max-width: 767px) {
-      font-size: 16px;
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      font-size: 1rem;
     }
   }
   .newsPreview {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
   }
   .newsLink {
     display: block;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
-    margin: 12px 20px;
+    margin: 0.75rem 1.25rem;
 
     &:hover {
       color: white;
     }
 
-    @media (max-width: 1279px) {
-      font-size: 18px;
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      font-size: 1.125rem; /* 18px */
     }
-    @media (max-width: 767px) {
-      font-size: 20px;
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      font-size: 1.25rem;
     }
   }
   .newsDate {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
     border-top: 1px solid black;
-    padding-top: 8px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-top: 0.5rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
 
-    @media (max-width: 1279px) {
-      font-size: 17px;
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      font-size: 1.0625rem; /* 17px */
     }
-    @media (max-width: 767px) {
-      font-size: 18px;
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      font-size: 1.125rem; /* 18px */
     }
   }
   .newsImage {
@@ -393,7 +409,7 @@ footer {
 /* Article Page */
 .articleContainer {
   width: 60%;
-  margin: 40px auto;
+  margin: 2.5rem auto;
   padding: 0;
 
   .articleHeader {
@@ -401,21 +417,21 @@ footer {
   }
 
   .articleTitle {
-    padding: 8px 20px 0px 20px;
+    padding: 0.5rem 1.25rem 0 1.25rem;
     margin: 0;
   }
   .articleDate {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
     border-top: 1px solid black;
-    padding: 8px 20px 10px 20px;
+    padding: 0.5rem 1.25rem 0.625rem 1.25rem; /* 8px 20px 10px 20px */
     margin: 0;
   }
   .articleContent {
     background-color: rgb(18, 18, 18);
     color: white;
-    padding: 20px;
+    padding: 1.25rem;
     margin: 0;
   }
 }
@@ -423,17 +439,17 @@ footer {
 /* Media Page */
 .mediaButtons {
   display: flex;
-  gap: 8px;
-  margin-top: 20px;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
   justify-content: center;
 }
 
 .mediaSelection {
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: black;
   color: white;
   width: 13%;
-  padding: 5px;
+  padding: 0.25em; /* 5px, relative to own font-size */
   cursor: pointer;
   border: none;
   outline: none;
@@ -445,13 +461,15 @@ footer {
     background-color: rgb(188, 0, 0);
   }
 
-  @media (max-width: 1279px) {
+  @media (max-width: 79.9375em) {
+    /* 1279px */
     width: 25%;
-    font-size: 22px;
+    font-size: 1.375rem; /* 22px */
   }
-  @media (max-width: 767px) {
+  @media (max-width: 47.9375em) {
+    /* 767px */
     width: 47%;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -462,15 +480,17 @@ footer {
 .mediaGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 20px;
-  max-width: 1100px;
+  gap: 1rem;
+  padding: 1.25rem;
+  max-width: 68.75rem;
   margin: 0 auto;
 
-  @media (max-width: 1279px) {
+  @media (max-width: 79.9375em) {
+    /* 1279px */
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 767px) {
+  @media (max-width: 47.9375em) {
+    /* 767px */
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -508,37 +528,40 @@ footer {
 
 .lightboxClose {
   position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 32px;
+  top: 1.25rem;
+  right: 1.875rem; /* 30px */
+  font-size: 2rem;
   color: white;
   cursor: pointer;
 }
 
-/* About Page (To be continued)*/
+/* About Page */
 .aboutContainer {
   .about {
     color: white;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
 
-    @media (max-width: 1279px) {
-      font-size: 34px;
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      font-size: 2.125rem; /* 34px */
     }
-    @media (max-width: 767px) {
-      font-size: 36px;
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      font-size: 2.25rem;
     }
   }
 
   .aboutGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1280px;
-    margin: 20px auto;
-    padding: 0 20px;
+    gap: 1.25rem;
+    max-width: 80rem;
+    margin: 1.25rem auto;
+    padding: 0 1.25rem;
 
-    @media (max-width: 767px) {
+    @media (max-width: 47.9375em) {
+      /* 767px */
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -549,33 +572,37 @@ footer {
   }
 
   .aboutTitle {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
     background-color: rgb(188, 0, 0);
     color: white;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
-    @media (max-width: 1279px) {
-      font-size: 22px;
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      font-size: 1.375rem; /* 22px */
     }
-    @media (max-width: 767px) {
-      font-size: 24px;
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      font-size: 1.5rem;
     }
   }
 
   .aboutText {
-    font-size: 13px;
+    font-size: 0.8125rem; /* 13px */
     background-color: black;
     color: white;
-    padding: 10px 10px 10px;
-    margin-top: 5px;
+    padding: 0.625rem; /* 10px */
+    margin-top: 0.3125rem; /* 5px */
 
-    @media (max-width: 1279px) {
-      font-size: 14px;
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      font-size: 0.875rem; /* 14px */
     }
-    @media (max-width: 767px) {
-      font-size: 16px;
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      font-size: 1rem;
     }
   }
 }
