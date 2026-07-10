@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
 
-  document.querySelectorAll("#screenshots .mediaCard img").forEach((img) => {
-    img.addEventListener("click", () => {
+  document.querySelectorAll("#screenshots .mediaCard button").forEach((btn) => {
+    const img = btn.querySelector("img");
+    btn.addEventListener("click", () => {
       lightboxImg.src = img.src;
       lightbox.classList.add("active");
     });
@@ -45,6 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) lightbox.classList.remove("active");
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+      lightbox.classList.remove("active");
+    }
   });
 });
 

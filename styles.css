@@ -452,7 +452,10 @@ footer {
   padding: 0.25em; /* 5px, relative to own font-size */
   cursor: pointer;
   border: none;
-  outline: none;
+  &:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
 
   &:hover {
     background-color: rgb(90, 90, 90);
@@ -505,6 +508,27 @@ footer {
     border: none;
     cursor: pointer;
   }
+}
+.mediaCard button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.875rem; /* 30px */
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
 }
 
 .lightbox {
