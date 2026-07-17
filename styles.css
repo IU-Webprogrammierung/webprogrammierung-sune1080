@@ -423,6 +423,15 @@ footer {
   margin: 2.5rem auto;
   padding: 0;
 
+  @media (max-width: 79.9375em) {
+    /* 1279px */
+    width: 75%;
+  }
+  @media (max-width: 47.9375em) {
+    /* 767px */
+    width: 90%;
+  }
+
   .articleHeader {
     background-color: rgb(188, 0, 0);
   }
