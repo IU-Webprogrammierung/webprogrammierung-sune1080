@@ -153,6 +153,16 @@ nav {
   img {
     height: 2.25rem;
     padding: 0 1.25rem;
+
+    @media (max-width: 79.9375em) {
+      /* 1279px */
+      height: 2rem; /* 32px */
+    }
+    @media (max-width: 47.9375em) {
+      /* 767px */
+      height: 1.75rem; /* 28px */
+      padding: 0 0.625rem; /* 10px */
+    }
   }
   .hamburger {
     display: none;
