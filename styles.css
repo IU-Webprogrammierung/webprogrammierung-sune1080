@@ -465,6 +465,7 @@ footer {
 }
 
 .mediaSelection {
+  box-sizing: border-box;
   font-size: 1.25rem;
   background-color: black;
   color: white;
@@ -491,8 +492,8 @@ footer {
   }
   @media (max-width: 47.9375em) {
     /* 767px */
-    width: 47%;
-    font-size: 1.5rem;
+    width: 48%;
+    font-size: 1.125rem; /* 18px */
   }
 }
 
