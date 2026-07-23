@@ -65,6 +65,15 @@ body {
     font-size: 1.25rem;
     color: white;
     text-decoration: none;
+
+    &.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    &.pageLink--disabled {
+      color: rgba(255, 255, 255, 0.35);
+      cursor: not-allowed;
+    }
   }
   @media (max-width: 79.9375em) {
     /* 1279px */
