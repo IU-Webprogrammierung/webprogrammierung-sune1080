@@ -68,6 +68,12 @@ Over the course of development, the CSS went through several dedicated cleanup p
 
 Screenshots and photos are provided in WebP format to reduce file size; the game logo and icons use PNG for compatibility.
 
+## Known Placeholders
+
+The video embeds on the media page currently use placeholder content and would be replaced with real gameplay footage once it exists.
+
+Pagination on the news and media pages currently shows only page 1 as active; pages 2 and 3 are visibly present but disabled, since there isn't yet enough content to fill additional pages. They will become functional once more news posts / media items exist.
+
 ## Git Workflow
 
 The project was developed iteratively across multiple phases (concept → layout/responsiveness → refactoring and polish), with each round of tutor feedback addressed as a separate, focused pass (e.g. HTMX loading behavior, CSS unit conversion, keyboard accessibility, alt text) rather than one large end-of-project cleanup.
