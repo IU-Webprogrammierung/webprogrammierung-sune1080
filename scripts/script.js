@@ -2,8 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Active Nav-Link
   document.addEventListener("htmx:afterSwap", function () {
     const links = document.querySelectorAll("nav a");
+    const normalize = (path) => path.replace(/index\.html$/, "");
+    const currentPath = normalize(window.location.pathname);
+
     links.forEach(function (link) {
-      if (link.href === window.location.href) {
+      const linkPath = normalize(new URL(link.href).pathname);
+      if (linkPath === currentPath) {
         link.classList.add("active");
       }
     });
